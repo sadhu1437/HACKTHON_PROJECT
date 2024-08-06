@@ -1,0 +1,85 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Website</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#flights">Flights</a></li>
+                <li><a href="#check-in">Check-in</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./registration.html">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="flight-results">
+    <main>
+        <section id="home">
+            <h1>Welcome to Airline</h1>
+            <p>Book your flights now!</p>
+            <button>Book Now</button>
+        </section>
+        <section id="flights">
+            <h2>Flights</h2>
+            <form>
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from">
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to"><br><br>
+                <table>
+                    <tr>
+                <td><label for="departure">Departure:</label></td>
+                <td><input type="date" id="departure" name="departure"></td>
+                <td><label for="return">Return:</label></td>
+                <td><input type="date" id="return" name="return"></td>
+                </tr>
+                </table><br>
+                <button>Search</button>
+            </form>
+        </section>
+        <section id="check-in">
+            <h2>Check-in</h2>
+            <form>
+                <label for="booking-reference">Booking Reference:</label>
+                <input type="text" id="booking-reference" name="booking-reference">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name"><br><br>
+                <button>Check-in</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Get in touch with us!</p>
+            <form>
+                <table>
+                    <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name"></td>
+                <td><label for="email">Email:</label></td>
+                 <td><input type="email" id="email" name="email"></td>
+                <td><label for="message">Message:</label></td>
+                <td><textarea id="message" name="message"></textarea></td>
+                </tr>
+                </table><br>
+                <button>Send</button>
+            </form>
+        </section>
+    </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 Airline</p>
+    </footer>
+    <script src="./index.js">
+
+    </script>
+</body>
+</html>
